@@ -8,8 +8,8 @@ import (
 
 var (
 	numBlock    = "(?:25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])"
-	ipPattern   = `(?:ssh|scp|rsync)\b.+?([a-zA-Z0-9]{3,})@(` + numBlock + `\.` + numBlock + `\.` + numBlock + `\.` + numBlock + `)`
-	hostPattern = `(?:ssh|scp|rsync)\b.+?([a-zA-Z0-9]{3,})@([A-Za-z0-9_\.]{5,}\.[A-Za-z\.]+)`
+	ipPattern   = `\b(?:ssh|scp|rsync)\b\s*([a-zA-Z0-9]{3,})@(` + numBlock + `\.` + numBlock + `\.` + numBlock + `\.` + numBlock + `)`
+	hostPattern = `\b(?:ssh|scp|rsync)\b\s*([a-zA-Z0-9]{3,})@([A-Za-z0-9_\.]{5,}\.[A-Za-z\.]+)`
 	ipRegex     = regexp.MustCompile(ipPattern)
 	hostRegex   = regexp.MustCompile(hostPattern)
 )
