@@ -1,4 +1,4 @@
-module github.com/ip-rw/sshspider
+module github.com/ip-rw/sshpider
 
 go 1.14
 

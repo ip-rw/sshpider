@@ -1,9 +1,9 @@
 package search
 
 import (
+	"github.com/ip-rw/sshpider/pkg/structs"
 	"regexp"
 	"strings"
-	"github.com/ip-rw/sshspider/pkg/structs"
 )
 
 var (
